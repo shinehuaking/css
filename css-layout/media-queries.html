@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <style type="text/css">
+   /* “响应式设计（Responsive Design）”是一种让网站针对不同的浏览器和设备“响应”不同显示效果的策略，这样可以让网站在任何情况下显示的很棒！*/
+  /* 媒体查询做此事时最强大的工具，让我们使用百分比宽度来布局，然后在浏览器变窄到无法容纳的时候，让布局显示成一列*/
+    @media screen and (min-width:600px) {
+       #header,#content {
+          background: green;
+          text-align: center;
+          height: 60px;
+          width: 40%;
+          float: left;
+          border: 2px solid red;
+       }
+    }
+    @media screen and (max-width:599px) {
+       #header,#content {
+          background: green;
+          text-align: center;
+          height: 60px;
+          width: 40%;
+          border: 2px solid red;
+       }
+       
+     }
+      
+    </style>
+  </head>
+  <body>
+  <div id="header">Header</div>
+  <div id="content">Content</div> 
+  </body>
+</html>

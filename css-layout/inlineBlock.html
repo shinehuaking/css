@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <style type="text/css">
+   /* 使用inline-block需要牢记的事情
+    vertical-align 属性会影响到 inline-block 元素，你可能会把它的值设置为 top 。
+你需要设置每一列的宽度
+如果HTML源代码中元素之间有空格，那么列与列之间会产生空隙*/
+
+    	#header,#col1,#col2,#col3,#footer {
+    		background: green;
+    		text-align: center;
+    		vertical-align: bottom;
+    		height: 60px;
+        margin-top: 10px;
+    	}
+    	#col1,#col2,#col3 {
+        display: inline-block;
+    		width: 33.3333%;
+    	}
+      /*inline-block不支持IE6和IE7，inline-block直接的元素有空格，需要把上个的关闭标签和下一个元素的开始标签放在一起来移除空格*/
+    </style>
+  </head>
+  <body>
+  <div id="header">Header</div>
+    <div id="content">
+    	<div id="col1">
+      co11
+      </div><div id="col2">
+      col2
+      </div><div id="col3">
+      col3
+      </div>
+    </div>
+    <div id="footer">Footer</div>	
+  </body>
+</html>

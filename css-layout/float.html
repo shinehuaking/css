@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <style type="text/css">
+    	#header,#col1,#col2,#col3,#footer {
+    		background: green;
+    		text-align: center;
+    		height: 60px;
+    	}
+    	#col1,#col2,#col3 {
+    		float: left;
+    		width: 32%;
+    	}
+    	#col2,#col3 {
+    		margin-left: 2%;
+    		margin-left: 2%;
+    	}
+    	#header,#content,#footer {
+    		width: 100%;
+    	}
+    	#content {
+    		margin: 10px 0 10px 0px;
+    	}
+    	#content:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
+    </style>
+  </head>
+  <body>
+  <div id="header">Header</div>
+    <div id="content">
+    	<div id="col1">float left</div>
+    	<div id="col2">float left</div>
+    	<div id="col3">float left</div>
+    </div>
+    <div id="footer">Footer</div>	
+  </body>
+</html>

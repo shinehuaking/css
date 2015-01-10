@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <style type="text/css">
+    /*absolute布局，会脱离正常的文档流，原来占据的空间不会存在，如果离他最近的父节点的布局是relative，设置left和top都是以父节点来作为相对位置来偏移的。如果离他最近的父节点的布局不是relative，设置left和top都是相对于文档的body元素，并且会随着页面的移动而移动的*/
+      #header,#footer,#content {
+        background: green;
+        width:100px;
+        height:100px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      #content {
+        /*position: relative;*/
+        position: relative;
+        background: none;
+        border: 2px dashed #9799a7; 
+      }
+      h5 {
+        position: absolute;
+        left: 50px;
+        top: 10px;
+        border-radius: 5px;
+        background: green;
+        width:100px;
+        height: 100px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+  <div id="header">Header</div>
+  <div id="content"><h5>Content</h5></div>
+  <div id="footer">Footer</div>	
+  </body>
+</html>

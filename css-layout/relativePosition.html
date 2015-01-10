@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <style type="text/css">
+    /*relative不会脱离正常的文档流，他本身的位置还存在，设置left和top后相对于他在正常文档流的位置中进行偏移*/
+    /*relative 表现的和 static 一样，除非你添加了一些额外的属性。在一个相对定位（position属性的值为relative）的元素上设置 top 、 right 、 bottom 和 left 属性会使其偏离其正常位置。其他的元素则不会调整位置来弥补它偏离后剩下的空隙。*/
+      #header,#footer,#content {
+        background: green;
+        width:100px;
+        height:100px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      #content {
+        background: none;
+         border: 2px dashed #9799a7; 
+      }
+      h5 {
+        position: relative;
+        left: 50px;
+        top: 50px;
+        border-radius: 5px;
+        background: green;
+        width:100px;
+        height: 100px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+  <div id="header">Header</div>
+  <div id="content"><h5>Content</h5></div>
+  <div id="footer">Footer</div>	
+  </body>
+</html>
